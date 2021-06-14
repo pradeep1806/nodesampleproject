@@ -1,0 +1,28 @@
+{
+  "name": "com.sample.project",
+  "version": "1.0.0",
+  "description": "Sample Project to show case best coding practices.",
+  "main": "server.js",
+  "scripts": {
+    "start": "NODE_ENV=production node server",
+    "dev": "nodemon server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pradeep1806/nodesampleproject.git"
+  },
+  "author": "Pradeep.k",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pradeep1806/nodesampleproject/issues"
+  },
+  "homepage": "https://github.com/pradeep1806/nodesampleproject#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  },
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "server.js": "^1.0.0"
+  }
+}
