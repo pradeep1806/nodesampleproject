@@ -4,6 +4,7 @@ const logger = require("./middlewares/logger");
 const morgan = require("morgan");
 const connectDb = require("./config/db");
 const colors = require("colors");
+const errorHandler = require("./middlewares/error");
 //Import routes
 const breeds = require("./routes/breeds");
 //Load environmental configurations
@@ -28,6 +29,9 @@ if (process.env.NODE_ENV == "development") {
 const PORT = process.env.PORT || 7000;
 //Link routes
 app.use("/api/v1/breeds", breeds);
+
+//Error Handler
+app.use(errorHandler);
 
 //Start Server to listen
 const server = app.listen(
