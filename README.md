@@ -22,6 +22,10 @@ npm run dev
 
 npm start
 
+# Postman API documentation
+
+https://documenter.getpostman.com/view/1318632/TzeUn8r3
+
 - Version: 1.0.0
 - License: ISC
 - Author: Pradeep K

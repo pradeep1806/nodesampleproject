@@ -14,6 +14,7 @@ exports.getBreeds = async (req, res, next) => {
 //@route  GET /api/v1/breeds/:id
 //@access Public api
 exports.getBreed = asyncHandler(async (req, res, next) => {
+  console.log(`Param id ${req.params.id}`);
   const breed = await Breed.findById(req.params.id);
   if (!breed) {
     //BAD REQUEST
